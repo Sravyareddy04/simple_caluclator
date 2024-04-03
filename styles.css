@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("image8.jpeg");
+  }
+  .calculator {
+    width: 300px;
+    margin: 100px auto; /* Increased margin-top to move the calculator box down */
+    padding: 10px;
+    border: 1px solid #363434;
+    border-radius: 5px;
+    background-color: rgb(190, 186, 186); /* Background image */
+    background-size: cover; /* Scale the background image to cover the entire box */
+    background-position: center;
+  }
+    
+  .calculator h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-family: monospace;
+  }
+  
+  #display {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    border: 1px solid #9dccd4;
+    border-radius: 5px;
+  }
+  
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Increased gap between buttons */
+  }
+  
+  button {
+    width: 80%;
+    height:60px;
+    padding: 0;
+    font-size: 20px;
+    background-color: #807d7d;
+    border: 1px solid #141413;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #a8b1b1;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+  
